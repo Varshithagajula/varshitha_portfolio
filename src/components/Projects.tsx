@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github, Rocket } from "lucide-react";
 
@@ -9,9 +8,9 @@ const Projects = () => {
     description: "A fully responsive Doctor Appointment Booking System that allows patients to book or cancel appointments with integrated online payment functionality.",
     techStack: ["MongoDB", "Express.js", "React", "Node.js"],
     links: {
-      patientFrontend: "https://mediconnect-frontend.vercel.app",
-      adminPanel: "https://mediconnect-admin.vercel.app", 
-      backendAPI: "https://mediconnect-backend.herokuapp.com",
+      patientFrontend: "https://mediconnect-frontend-cn70.onrender.com/",
+      adminPanel: "https://mediconnect-admin-zfq6.onrender.com/admin", 
+      backendAPI: "https://mediconnect-backend-lq1k.onrender.com/",
       github: "https://github.com/Varshithagajula/MediConnect"
     },
     features: [
