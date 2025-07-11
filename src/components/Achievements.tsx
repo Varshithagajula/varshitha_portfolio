@@ -1,11 +1,10 @@
-
-import { Trophy, Medal, Certificate, Star } from "lucide-react";
+import { Trophy, Medal, Award, Star } from "lucide-react";
 
 const Achievements = () => {
   const achievements = [
     {
       title: "Silver Medal – NPTEL Programming in Java",
-      type: "Academic Excellence",
+      type: "Academic Excellence", 
       icon: Medal,
       color: "from-yellow-400 to-orange-400",
       description: "Achieved silver medal certification in Java programming from NPTEL"
@@ -23,31 +22,31 @@ const Achievements = () => {
     {
       title: "Java Certification",
       provider: "NPTEL, edX",
-      icon: Certificate,
+      icon: Award,
       color: "from-green-400 to-emerald-400"
     },
     {
       title: "HTML, CSS, JavaScript",
       provider: "Infosys",
-      icon: Certificate,
+      icon: Award,
       color: "from-purple-400 to-pink-400"
     },
     {
       title: "Python Certification",
       provider: "HackerRank",
-      icon: Certificate,
+      icon: Award,
       color: "from-red-400 to-orange-400"
     },
     {
       title: "MongoDB Certification",
       provider: "MongoDB University",
-      icon: Certificate,
+      icon: Award,
       color: "from-indigo-400 to-blue-400"
     },
     {
       title: "Google Cloud Basics",
       provider: "Google Cloud",
-      icon: Certificate,
+      icon: Award,
       color: "from-cyan-400 to-teal-400"
     }
   ];
