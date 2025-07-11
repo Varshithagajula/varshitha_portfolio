@@ -10,6 +10,8 @@ import Achievements from "@/components/Achievements";
 import Contact from "@/components/Contact";
 
 const Index = () => {
+  console.log("Index page rendering");
+  
   return (
     <div className="min-h-screen">
       <Navigation />
