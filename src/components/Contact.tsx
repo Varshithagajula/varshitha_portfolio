@@ -3,14 +3,44 @@ import { Mail, Phone, MapPin, Send, Github, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { useState } from "react";
 
 const Contact = () => {
   console.log("Contact component rendering");
   
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    subject: '',
+    message: ''
+  });
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+  };
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Contact form submitted");
-    // Form submission logic would go here
+    console.log("Contact form submitted with data:", formData);
+    
+    // Create mailto link with form data
+    const mailtoLink = `mailto:varshithagajula@gmail.com?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(
+      `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
+    )}`;
+    
+    window.location.href = mailtoLink;
+    
+    // Reset form
+    setFormData({
+      name: '',
+      email: '',
+      subject: '',
+      message: ''
+    });
   };
 
   return (
@@ -88,16 +118,24 @@ const Contact = () => {
                   <div>
                     <label className="block text-sm font-medium mb-2">Name</label>
                     <Input 
+                      name="name"
+                      value={formData.name}
+                      onChange={handleInputChange}
                       placeholder="Your Name"
                       className="glass border-primary/20 focus:border-primary/40"
+                      required
                     />
                   </div>
                   <div>
                     <label className="block text-sm font-medium mb-2">Email</label>
                     <Input 
+                      name="email"
                       type="email"
+                      value={formData.email}
+                      onChange={handleInputChange}
                       placeholder="your.email@example.com"
                       className="glass border-primary/20 focus:border-primary/40"
+                      required
                     />
                   </div>
                 </div>
@@ -105,17 +143,25 @@ const Contact = () => {
                 <div>
                   <label className="block text-sm font-medium mb-2">Subject</label>
                   <Input 
+                    name="subject"
+                    value={formData.subject}
+                    onChange={handleInputChange}
                     placeholder="Subject"
                     className="glass border-primary/20 focus:border-primary/40"
+                    required
                   />
                 </div>
                 
                 <div>
                   <label className="block text-sm font-medium mb-2">Message</label>
                   <Textarea 
+                    name="message"
+                    value={formData.message}
+                    onChange={handleInputChange}
                     placeholder="Your message..."
                     rows={6}
                     className="glass border-primary/20 focus:border-primary/40 resize-none"
+                    required
                   />
                 </div>
                 

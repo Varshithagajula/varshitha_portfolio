@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Download, ExternalLink } from "lucide-react";
 
@@ -8,8 +7,7 @@ const Hero = () => {
   };
 
   const downloadResume = () => {
-    // This would typically link to an actual resume file
-    window.open('https://docs.google.com/document/d/your-resume-link', '_blank');
+    window.open('https://drive.google.com/file/d/1ca-YlYBDMufH1GHU2a1y_DV_KFptcT5d/view?usp=sharing', '_blank');
   };
 
   return (

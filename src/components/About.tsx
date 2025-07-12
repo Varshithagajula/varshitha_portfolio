@@ -22,7 +22,7 @@ const About = () => {
                 <div className="relative">
                   <Avatar className="w-48 h-48 border-4 border-primary/20 shadow-2xl">
                     <AvatarImage 
-                      src="/placeholder.svg" 
+                      src="https://drive.google.com/uc?export=view&id=1GqCQrBJ14L0x1CyAF6NrZULDWic56OM3" 
                       alt="Gajula Lakshmi Naga Varshitha"
                       className="object-cover"
                     />
