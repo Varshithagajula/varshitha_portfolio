@@ -42,13 +42,18 @@ const About = () => {
               <div className="md:col-span-2 space-y-6">
                 <p className="text-lg text-muted-foreground leading-relaxed">
                   My name is <span className="text-primary font-semibold">Gajula Lakshmi Naga Varshitha</span>. 
-                  I am currently in the 6th semester of my B.Tech at VVIT, Nambur, with a CGPA of 9.24. 
-                  I completed my Intermediate at Sri Chaitanya Junior College with 98.3% and SSC at Teja High School with 100%.
+                  I am currently in the final year of my B.Tech in Computer Science Engineering at VVIT, Nambur, with a CGPA of 9.21. 
+                  I completed my Intermediate at Sri Chaitanya Junior College with 98.3% and my SSC at Teja High School with 100%.
                 </p>
                 
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  I have a solid foundation in programming and hands-on experience in Java, Python, and the MERN stack. 
-                  I've completed a Java Full Stack Development internship and developed projects such as a Doctor Appointment Booking System.
+                  I have a strong foundation in programming and hands-on experience in Java, Python, and the MERN stack. 
+                  I have completed a Java Full Stack Development internship and worked on projects such as MediConnect, a doctor appointment booking system, and CryptoTrack, a cryptocurrency tracker. 
+                  I am passionate about building real-world applications, learning emerging technologies, and continuously improving my skills.
+                </p>
+                
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  I consider myself self-motivated, a quick learner, and highly adaptable. In my free time, I enjoy listening to music, drawing, and watching TV.
                 </p>
 
                 <div className="glass rounded-2xl p-6 space-y-4">
@@ -56,7 +61,7 @@ const About = () => {
                     <GraduationCap className="h-6 w-6 text-primary" />
                     <div>
                       <h3 className="font-semibold">Academic Excellence</h3>
-                      <p className="text-sm text-muted-foreground">CGPA: 9.24/10</p>
+                      <p className="text-sm text-muted-foreground">CGPA: 9.21/10</p>
                     </div>
                   </div>
                   
@@ -72,7 +77,7 @@ const About = () => {
                     <Heart className="h-6 w-6 text-primary" />
                     <div>
                       <h3 className="font-semibold">Interests</h3>
-                      <p className="text-sm text-muted-foreground">Music, Drawing, Tech</p>
+                      <p className="text-sm text-muted-foreground">Music, Drawing, Watching TV</p>
                     </div>
                   </div>
                 </div>

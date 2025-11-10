@@ -7,7 +7,7 @@ const Hero = () => {
   };
 
   const downloadResume = () => {
-    window.open('https://drive.google.com/file/d/1ca-YlYBDMufH1GHU2a1y_DV_KFptcT5d/view?usp=sharing', '_blank');
+    window.open('https://drive.google.com/file/d/1eH2T1KU3DT1KJJO4kHjzpvXacxi-PuKZ/view?usp=sharing', '_blank');
   };
 
   return (
