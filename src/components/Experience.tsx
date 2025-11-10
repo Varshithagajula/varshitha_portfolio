@@ -5,7 +5,7 @@ const Experience = () => {
   const experienceData = [
     {
       title: "Google AIML Virtual Internship",
-      company: "Google",
+      company: "EduSkills",
       duration: "2024",
       type: "Internship",
       description: "Explored Core AIML concepts including data preprocessing, model building through hands-on project.",
@@ -24,8 +24,8 @@ const Experience = () => {
     },
     {
       title: "Java Full Stack Developer",
-      company: "Virtual Internship",
-      duration: "2023",
+      company: "EduSkills",
+      duration: "2024",
       type: "Internship",
       description: "Gained comprehensive hands-on experience with full-stack Java development technologies and methodologies.",
       achievements: [

@@ -7,7 +7,7 @@ const Education = () => {
       degree: "B.Tech in Computer Science Engineering",
       institution: "VVIT College",
       duration: "2022 – 2026",
-      grade: "CGPA: 9.24",
+      grade: "CGPA: 9.21",
       status: "Current",
       icon: GraduationCap,
       color: "from-blue-400 to-cyan-400"

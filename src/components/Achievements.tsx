@@ -38,13 +38,19 @@ const Achievements = () => {
       color: "from-red-400 to-orange-400"
     },
     {
+      title: "SQL Certification",
+      provider: "HackerRank",
+      icon: Award,
+      color: "from-yellow-400 to-orange-400"
+    },
+    {
       title: "MongoDB Certification",
       provider: "MongoDB University",
       icon: Award,
       color: "from-indigo-400 to-blue-400"
     },
     {
-      title: "Google Cloud Basics",
+      title: "Google Certified Associate Cloud Engineer",
       provider: "Google Cloud",
       icon: Award,
       color: "from-cyan-400 to-teal-400"
